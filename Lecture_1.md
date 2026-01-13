@@ -51,6 +51,17 @@ java HelloWorld
 Good programming style and appropriate documentation reduce the chance of errors and make programs easy to read. In a long program, you should also include comments that introduce each major step and explain anything that is difficult to read. <br>
 In addition to line comments (beginning with `//`) and block comments (beginning with `/*`), Java supports comments of a special type, referred to as javadoc comments. javadoc comments begin with `/**` and end with `*/`. They can be extracted into an HTML file using the JDK’s javadoc command.
 
+```java
+public class HelloWorld
+{
+    \\ this is a comment.
+    public static void main(String[] args)
+    {
+        System.out.println("Hello World");
+    }
+}
+```
+
 ## Variables
 Variables are for representing data of a certain type. To use a variable, you declare it by telling the compiler its name as well as what type of data it can store. The variable declaration tells the compiler to allocate appropriate memory space for the variable based on its data type.
 
