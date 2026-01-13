@@ -41,7 +41,11 @@ A Java compiler translates a Java source file into a Java bytecode file. The fol
 javac HelloWorld.java
 ```
 
-If there aren’t any syntax errors, the compiler generates a bytecode file with a `.class` extension. The Java language is a high-level language, but Java bytecode is a low-level language. The bytecode is similar to machine instructions but is architecture neutral and can run on any platform that has a Java Virtual Machine (JVM). You can execute the bytecode on any platform with a JVM, which is an interpreter. It translates the individual instructions in the bytecode into the target machine language code one at a time, rather than the whole program as a single unit. Each step is executed immediately after it is translated.
+If there aren’t any syntax errors, the compiler generates a bytecode file with a `.class` extension. The Java language is a high-level language, but Java bytecode is a low-level language. The bytecode is similar to machine instructions but is architecture neutral and can run on any platform that has a Java Virtual Machine (JVM). You can execute the bytecode on any platform with a JVM, which is an interpreter. It translates the individual instructions in the bytecode into the target machine language code one at a time, rather than the whole program as a single unit. Each step is executed immediately after it is translated. You can execute the bytcode file using `java` command:
+```java
+java HelloWorld
+
+```
 
 ## Programming Style and Documentation
 Good programming style and appropriate documentation reduce the chance of errors and make programs easy to read. In a long program, you should also include comments that introduce each major step and explain anything that is difficult to read. <br>
