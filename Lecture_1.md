@@ -7,7 +7,7 @@ Java is a full-fledged and powerful language that can be used in many ways. It c
 - Java Enterprise Edition (Java EE) to develop server-side applications, such as Java servlets, JavaServer Pages (JSP), and JavaServer Faces (JSF).
 - Java Micro Edition (Java ME) to develop applications for mobile devices, such as cell phones.
 
-Java SE is the foundation upon which all other Java technology is based. Oracle releases each version with a Java Development Toolkit (JDK). The JDK consists of a set of separate programs, each invoked from a command line, for compiling, running, and testing Java programs. The program for running Java programs is known as Java Runtime Environment (JRE). Instead of using the JDK, you can use a Java development tool (e.g., NetBeans, Eclipse, and TextPad)—software that provides an integrated development environment (IDE) for developing Java programs quickly
+Java SE is the foundation upon which all other Java technology is based. Oracle releases each version with a Java Development Toolkit (JDK). The JDK consists of a set of separate programs, each invoked from a command line, for compiling, running, and testing Java programs. The program for running Java programs is known as Java Runtime Environment (JRE). Instead of using the JDK, you can use a Java development tool (e.g., NetBeans, Eclipse, and TextPad), software that provides an integrated development environment (IDE) for developing Java programs quickly
 
 ## A Simple Java Program
 Java uses classes to create a program. The program is executed from the `main` method. A class may contain several methods. The `main` method is the entry point where the program begins execution.
