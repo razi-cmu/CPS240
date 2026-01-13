@@ -142,76 +142,6 @@ public class Student {
 }
 ```
 
-## Class Level Functions
-Word `static` means it is a class level function and not an object/instance level function. So you can access this function without creating an object of a class. You can create more than one static function in a class. <br>
-
-```java
-public class HelloWorld
-{
-    public static void main(String[] args)
-    {
-        System.out.println("Hello World");
-        test();
-    }
-
-    public static void test()
-    {
-        System.out.println("This is another static function");
-    }
-}
-```
-## Member Functions
-Member functions can also be used in Java that would require you to create an object/instance of a class to access them. These functions cannot be accessed without an object. So the following code will produce an error.
-```java
-public class Testing {
-    public void test()
-    {
-        System.out.println("This is a member function");
-    }
-    public static void main(String[] args) {
-        test();
-    }
-}
-```
-In order to fix the above code, an instance of the class is required. Below is the correct code.
-```java
-public class Testing {
-
-
-    public void test()
-    {
-        System.out.println("This is a member function");
-    }
-    public static void main(String[] args) {
-        Testing testing = new Testing();
-        testing.test();
-    }
-    
-}
-```
-More than 1 member function can be created inside a class
-```java
-public class Testing {
-
-
-    public void test()
-    {
-        System.out.println("This is a member function");
-    }
-
-    public void test_2()
-    {
-        System.out.println("This is another member function");
-    }
-    public static void main(String[] args) {
-        Testing testing = new Testing();
-        testing.test();
-        testing.test_2();
-    }
-    
-}
-```
-
 ## Conditional Statements
 Java has several types of selection statements: one-way `if` statements, two-way `if-else` statements, nested `if` statements, multi-way `if-else` statements, `switch` statements, and conditional operators. <br>
 
@@ -331,6 +261,76 @@ void progress()
         }
     }
 ```
+## Class Level Functions
+Word `static` means it is a class level function and not an object/instance level function. So you can access this function without creating an object of a class. You can create more than one static function in a class. <br>
+
+```java
+public class HelloWorld
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Hello World");
+        test();
+    }
+
+    public static void test()
+    {
+        System.out.println("This is another static function");
+    }
+}
+```
+## Member Functions
+Member functions can also be used in Java that would require you to create an object/instance of a class to access them. These functions cannot be accessed without an object. So the following code will produce an error.
+```java
+public class Testing {
+    public void test()
+    {
+        System.out.println("This is a member function");
+    }
+    public static void main(String[] args) {
+        test();
+    }
+}
+```
+In order to fix the above code, an instance of the class is required. Below is the correct code.
+```java
+public class Testing {
+
+
+    public void test()
+    {
+        System.out.println("This is a member function");
+    }
+    public static void main(String[] args) {
+        Testing testing = new Testing();
+        testing.test();
+    }
+    
+}
+```
+More than 1 member function can be created inside a class
+```java
+public class Testing {
+
+
+    public void test()
+    {
+        System.out.println("This is a member function");
+    }
+
+    public void test_2()
+    {
+        System.out.println("This is another member function");
+    }
+    public static void main(String[] args) {
+        Testing testing = new Testing();
+        testing.test();
+        testing.test_2();
+    }
+    
+}
+```
+
 ## Functions with Return Types
 A `void` method does not return a value. Java functions can return results based on various data types.
 ```java
