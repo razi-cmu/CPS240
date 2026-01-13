@@ -54,7 +54,7 @@ In addition to line comments (beginning with `//`) and block comments (beginning
 ```java
 public class HelloWorld
 {
-    \\ this is a comment.
+    // this is a comment.
     public static void main(String[] args)
     {
         System.out.println("Hello World");
