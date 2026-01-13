@@ -1,7 +1,7 @@
 # Overview of Java (Review CPS 180)
 
 ## The Java Language
-Java is a powerful and versatile programming language for developing software running on mobile devices, desktop computers, and servers. Java is a full-featured, general-purpose programming language that can be used to develop robust mission-critical applications. Today, more than 3 billion devices run Java. Most major companies use Java in some applications. Most server-side applications were developed using Java. Java was used to develop the code to communicate with and control the robotic rover on Mars. The software for Android cell phones is developed using Java. <br>
+Java is a powerful and versatile programming language for developing software running on mobile devices, desktop computers, and servers. Java is a full-featured, general-purpose programming language that can be used to develop robust mission-critical applications.  Most major companies use Java in some applications. Most server-side applications were developed using Java. Java was used to develop the code to communicate with and control the robotic rover on Mars. The software for Android cell phones is developed using Java. <br>
 Java is a full-fledged and powerful language that can be used in many ways. It comes in three editions:  
 - Java Standard Edition (Java SE) to develop client-side applications. The applications can run on desktop.
 - Java Enterprise Edition (Java EE) to develop server-side applications, such as Java servlets, JavaServer Pages (JSP), and JavaServer Faces (JSF).
