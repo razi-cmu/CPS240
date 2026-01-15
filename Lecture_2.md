@@ -37,7 +37,7 @@ Java provides an efficient way of reading from files using built-in classes. The
 ```
 The `BufferedReader` class in Java helps read text efficiently from files or user input. It stores data in a buffer, making reading faster and smoother instead of reading one character at a time. The key advantages of `BufferedReader` are:
 - Faster Reading: Reads large chunks of data at once, reducing the number of read operations.
-- Easy to Use: Can read text line by line using the readLine() method.
+- Easy to Use: Can read text line by line using the `readLine()` method.
 
 ## Writing Files
 Just like reading, Java provides built-in classes for writing to the files as well. The `FileWriter` class in Java is used to write character data to files. It extends `OutputStreamWriter` and handles characters directly, making it ideal for writing text files with either the default or a specified encoding.
@@ -76,7 +76,7 @@ fileWriter = new FileWriter("sample.txt", true);
 `BufferedWriter` class in Java is used to write text efficiently to character-based output streams. It stores characters in a buffer before writing them to the destination, thereby reducing the number of I/O operations and improving performance. Below are some of the advantages of using `BufferedWriter`:
 
 - Faster Writing: Writes large chunks of data at once instead of writing character by character.
-- Easy to Use: Provides methods like write() and newLine() to simplify text output.
+- Easy to Use: Provides methods like `write()` and `newLine()` to simplify text output.
 
 ## Array
 Often you will have to store a large number of values during the execution of a program. Suppose, for instance, that you need to read 100 numbers, compute their average, and find out how many numbers are above the average. Your program first reads the numbers and computes their average, then compares each number with the average to determine whether it is above the average. In order to accomplish this task, the numbers must all be stored in variables. You have to declare 100 variables and repeatedly write almost identical code 100 times. Writing a program this way would be impractical. So, how do you solve this problem? <br>
@@ -165,8 +165,8 @@ Arrays can be used as data members of a class as well:
 		}
 	}
 ```
-In Java, the `Scanner` class is present in the java.util package is used to obtain input for primitive types like int, double, etc., and strings. We can use this class to read input from a user or a file. <br>
-The ternary operator is a compact alternative to the if-else statement. It evaluates a condition and returns one of two values depending on whether the condition is true or false. It is commonly used for:
+In Java, the `Scanner` class is present in the `java.util` package is used to obtain input for primitive types like `int`, `double`, etc., and `strings`. We can use this class to read input from a user or a file. <br>
+The ternary operator is a compact alternative to the if-else statement. It evaluates a condition and returns one of two values depending on whether the condition is `true` or `false`. It is commonly used for:
 - Conditional value assignment
 - Simple decision-making logic
 - Replacing short if-else blocks
@@ -177,7 +177,7 @@ Linear Complexity is when runtime increases with the size.
 ```
 𝑇 = 𝑎𝑛 + 𝑏
 ```
-• We only consider the fastest growing term which is `n` in this case. • Drop any constants with the fastest growing term. Below are some of the examples:
+We only consider the fastest growing term which is `n` in this case. Drop any constants with the fastest growing term. Below are some of the examples:
 ```
 7n - 2
 ```
@@ -283,7 +283,6 @@ public boolean binary_search(int element)
 		int head = 0;
 		int tail = numbers.length - 1;
 		
-		
 		while (head <= tail)
 		{
 			int mid = (head + tail) / 2;
@@ -301,6 +300,20 @@ public boolean binary_search(int element)
 			}
 		}
 		return false;
-		
 }
 ```
+## References
+- Introduction to Java Programming and Data Structures, 13th edition, by Y Daniel Liang,
+  - Chapter 4 (Single Dimensional Arrays)
+  - Chapter 12 (Exception Handling and Text I/O)
+  - Chapter 22 (Developing Efficient Algorithms)
+  - Chapter 23 (Sorting)
+
+- https://www.geeksforgeeks.org/
+  - FileReader
+  - FileWriter
+  - BufferedReader
+  - BufferedWriter
+  - Selection Sort
+  - Binary Search
+  - 
