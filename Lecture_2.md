@@ -7,12 +7,12 @@ The `File` class is intended to provide an abstraction that deals with most of t
 ## Reading Files
 Java provides an efficient way of reading from files using built-in classes. The `FileReader` class in Java is used to read data from a file in the form of characters. It is a character-oriented stream that makes it ideal for reading text files. If you want to read binary data (like images or videos), use `FileInputStream` instead.
 ```java
-	import java.io.BufferedReader;
-	import java.io.FileNotFoundException;
-	import java.io.FileReader;
-	import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
-	public class Driver {
+public class Driver {
 
 		public static void main(String[] args) 
 		{
@@ -33,7 +33,7 @@ Java provides an efficient way of reading from files using built-in classes. The
 			}
 			
 		}
-	}
+}
 ```
 The `BufferedReader` class in Java helps read text efficiently from files or user input. It stores data in a buffer, making reading faster and smoother instead of reading one character at a time. The key advantages of `BufferedReader` are:
 - Faster Reading: Reads large chunks of data at once, reducing the number of read operations.
@@ -42,14 +42,14 @@ The `BufferedReader` class in Java helps read text efficiently from files or use
 ## Writing Files
 Just like reading, Java provides built-in classes for writing to the files as well. The `FileWriter` class in Java is used to write character data to files. It extends `OutputStreamWriter` and handles characters directly, making it ideal for writing text files with either the default or a specified encoding.
 ```java
-	import java.io.BufferedReader;
-	import java.io.BufferedWriter;
-	import java.io.FileNotFoundException;
-	import java.io.FileReader;
-	import java.io.FileWriter;
-	import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
-	public class Driver {
+public class Driver {
 
 		public static void main(String[] args) 
 		{
@@ -67,7 +67,7 @@ Just like reading, Java provides built-in classes for writing to the files as we
 			}
 			
 		}
-	}
+}
 ```
 In order to append to the existing file, a second parameter as `true` can be provided to `FileWriter` constructor as below:
 ```java
@@ -83,8 +83,8 @@ Often you will have to store a large number of values during the execution of a 
  Java and most other high-level languages provide a data structure, the `array`, which stores a fixed-size sequential collection of elements of the same type. 
 
 ```java
-	public class Driver 
-	{
+public class Driver 
+{
 		public static void main(String[] args) 
 		{
 			int[] numbers = new int[5];
@@ -99,7 +99,7 @@ Often you will have to store a large number of values during the execution of a 
 				System.out.println(numbers[i]);
 			}		
 		}
-	}
+}
 ```
 Once an array is created, its size is fixed. An array reference variable is used to access the elements in an array using an index. All elements in the array will have the same data type. As shown in the code above, an integer array was created so all the elements of the array are integers.
 
@@ -108,10 +108,10 @@ Arrays can be used as data members of a class as well:
 `Numbers.java`
  
 ```java
-	import java.util.Scanner;
+import java.util.Scanner;
 
-	public class Numbers 
-	{
+public class Numbers 
+{
 		private int[] numbers;
 		
 		Numbers(int size)
@@ -150,12 +150,11 @@ Arrays can be used as data members of a class as well:
 			return false;
 		}
 
-	}
+}
 ```
 `Driver.java`
 ```java
-	public class Driver {
-
+public class Driver {
 		public static void main(String[] args) 
 		{
 			Numbers num = new Numbers(5);
@@ -163,7 +162,7 @@ Arrays can be used as data members of a class as well:
 			num.print_elements();
 			System.out.println(num.search_element(5)? "Found" : "Not Found");
 		}
-	}
+}
 ```
 In Java, the `Scanner` class is present in the `java.util` package is used to obtain input for primitive types like `int`, `double`, etc., and `strings`. We can use this class to read input from a user or a file. <br>
 The ternary operator is a compact alternative to the if-else statement. It evaluates a condition and returns one of two values depending on whether the condition is `true` or `false`. It is commonly used for:
