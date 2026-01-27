@@ -585,3 +585,9 @@ Inner Classes is valuable technique when implementing data structures. An inner 
 	}
 
 ```
+
+## References
+- Introduction to Java Programming and Data Structures, 13th edition, by Y Daniel Liang,
+	- Chapter 9 (Objects and Classes)
+ 	- Chapter 10 (Object Oriented Thinking)
+- https://www.geeksforgeeks.org/java/inner-class-java/
