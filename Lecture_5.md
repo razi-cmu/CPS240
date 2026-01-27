@@ -166,7 +166,7 @@ The keyword `this` refers to the calling object or the current instance of the c
 	public class Student 
 	{
 		private String name;
-		private Integer age;
+		private int age;
 		
 		Student()
 		{
@@ -174,7 +174,7 @@ The keyword `this` refers to the calling object or the current instance of the c
 			this.age = 0;
 		}
 		
-		Student(String name, Integer age)
+		Student(String name, int age)
 		{
 			this.name = name;
 			this.age = age;
@@ -184,7 +184,7 @@ The keyword `this` refers to the calling object or the current instance of the c
 		{
 			return this.name;
 		}
-		public Integer getAge()
+		public int getAge()
 		{
 			return this.age;
 		}
@@ -192,7 +192,7 @@ The keyword `this` refers to the calling object or the current instance of the c
 		{
 			this.name = name;
 		}
-		public void setAge(Integer age)
+		public void setAge(int age)
 		{
 			this.age = age;
 		}
