@@ -12,23 +12,23 @@ Let's see an example implementation of inheritance in Java where a parent class 
 public class Vehicle 
 {
 		String name;
-		int kms;
+		int miles;
 
 		Vehicle()
 		{
 			this.name = "";
-			this.kms = 0;
+			this.miles = 0;
 		}
 
-		Vehicle(String name, int kms)
+		Vehicle(String name, int miles)
 		{
 			this.name = name;
-			this.kms = kms;
+			this.miles = miles;
 		}
 
 		void display()
 		{
-			System.out.println("Name: " + this.name + ", KMs: " + this.kms);
+			System.out.println("Name: " + this.name + ", miles: " + this.miles);
 		}
 }
 ```
@@ -43,9 +43,9 @@ public class Car extends Vehicle
 		{
 			this.type = "";
 		}
-		Car(String name, int kms, String type)
+		Car(String name, int miles, String type)
 		{
-			super(name, kms);
+			super(name, miles);
 			this.type = type;
 		}
 		void display()
@@ -69,7 +69,7 @@ public class Driver
 
 The keyword `super` refers to the superclass and can be used to invoke the superclass's methods and constructors. A constructor is used to construct an instance of a class. Unlike properties and methods, the constructors of a superclass are not inherited by a subclass. They can only be invoked from the constructors of the subclasses using the keyword `super`.
 
-A subclass inherits methods from a superclass. Sometimes, it is necessary for the subclass to modify the implementation of a method defined in the superclass. This is referred to as method overriding. The `display` method in `Vehicle` class is overridden in `Car` class in the above example since we wanted to display the `type` of the car in addition to name and kms.
+A subclass inherits methods from a superclass. Sometimes, it is necessary for the subclass to modify the implementation of a method defined in the superclass. This is referred to as method overriding. The `display` method in `Vehicle` class is overridden in `Car` class in the above example since we wanted to display the `type` of the car in addition to name and miles.
 
 ### Multi-Level Inheritance
 Java also offer multi-level inheritance where grant child can access `public` and `protected` members of parent and grand parent.
@@ -135,23 +135,23 @@ package com.cmu;
 public class Vehicle 
 {
 		protected String name;
-		protected int kms;
+		protected int miles;
 
 		Vehicle()
 		{
 			this.name = "";
-			this.kms = 0;
+			this.miles = 0;
 		}
 
-		Vehicle(String name, int kms)
+		Vehicle(String name, int miles)
 		{
 			this.name = name;
-			this.kms = kms;
+			this.miles = miles;
 		}
 
 		void display()
 		{
-			System.out.println("Name: " + this.name + ", KMs: " + this.kms);
+			System.out.println("Name: " + this.name + ", miles: " + this.miles);
 		}
 }
 
@@ -168,9 +168,9 @@ public class Car extends Vehicle
 		{
 			this.type = "";
 		}
-		public Car(String name, int kms, String type)
+		public Car(String name, int miles, String type)
 		{
-			super(name, kms);
+			super(name, miles);
 			this.type = type;
 		}
 		public void display()
