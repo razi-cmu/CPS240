@@ -201,7 +201,7 @@ public class Driver
 }
 
 ```
-One more important thing to note over here is that `Vehicle` and `Car` are in `com.cmu` package and `Driver` is in `com.cmu.test` package. The access to any protected member of `Vehicle` class would be given to `Driver` class if the `Driver` class is in the same package as `Vehicle` not matter it is the subclass or `Vehicle` or not.
+One more important thing to note over here is that `Vehicle` and `Car` are in `com.cmu` package and `Driver` is in `com.cmu.test` package. The access to any protected member of `Vehicle` class would be given to `Driver` class if the `Driver` class is in the same package as `Vehicle` no matter it is the subclass or `Vehicle` or not.
 
 ## Polymorphism
 Polymorphism means that a variable of a supertype can refer to a subtype object. Java supports Polymorphism, e.g., An object of parent class can hold the reference of a child class. The key concept of Polymorphism is that method calls are resolved at runtime, not compile time, for overridden methods.
