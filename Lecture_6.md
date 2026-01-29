@@ -7,7 +7,7 @@ A superclass is also referred to as a parent class or a base class, and a subcla
 
 Let's see an example implementation of inheritance in Java where a parent class `Vehicle` is used to derive child class like `Car`.
 
-Vehicle.java
+`Vehicle.java`
 ```java
 public class Vehicle 
 {
@@ -33,7 +33,7 @@ public class Vehicle
 }
 ```
 
-Car.java
+`Car.java`
 ```java
 public class Car extends Vehicle 
 {
@@ -55,7 +55,7 @@ public class Car extends Vehicle
 		}
 }
 ```
-Driver.java
+`Driver.java`
 ```java
 public class Driver 
 {
