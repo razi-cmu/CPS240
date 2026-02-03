@@ -464,6 +464,8 @@ Both classes implement the `Payment` interface, which means they are required to
 
 Finally, in the `Driver` class, objects of both payment types are created. The program then calls the `pay()` method on each object. Even though the objects are different, they can both be treated as Payment types because they follow the same interface rules.
 
+Let's see another example of Interfaces in Java.
+
 `Account.java`
 ```java	
 package com.cmu;
