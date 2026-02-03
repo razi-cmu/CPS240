@@ -265,6 +265,7 @@ public class Driver
 
 }
 ```
+Exception can also be caught and handled in the same method where it is thrown.
 ## Multiple catch blocks
 A try block can have multiple catch blocks.
 
