@@ -412,6 +412,58 @@ The above code forces Rectangle and Triangle classes to implement the calculateA
 ## Interfaces in Java
 An interface is a reference type in Java, similar to a class, that can contain only constants, method signatures, default methods, static methods, and nested types. It cannot contain instance fields or constructors.
 
+Let's start with a simple example.
+
+`Payment.java`
+```java
+interface Payment
+{
+    void pay(double amount);
+}
+```
+`CreditCard.java`
+```java
+class CreditCard implements Payment
+{
+    public void pay(double amount)
+	{
+        System.out.println("Paid using Credit Card: " + amount);
+    }
+}
+```
+`PayPal.java`
+```java
+class PayPal implements Payment
+{
+    public void pay(double amount)
+	{
+        System.out.println("Paid using PayPal: " + amount);
+    }
+}
+```
+`Driver.java`
+```java
+public class Driver
+{
+    public static void main(String[] args)
+{
+        Payment p1 = new CreditCard();
+        Payment p2 = new PayPal();
+
+        p1.pay(100);
+        p2.pay(200);
+    }
+}
+
+```
+The above program shows how interfaces work in Java using a payment system example. First, the code creates an interface called `Payment`. This interface defines a rule that any payment method must have a function called `pay()` that takes an amount as input. The interface does not explain how the payment happens, it only states that payment must be possible. Next, two classes are created:
+- CreditCard class
+- PayPal class
+
+Both classes implement the `Payment` interface, which means they are required to provide their own version of the `pay()` method. Each class prints a message showing how the payment is made using its specific method.
+
+Finally, in the `Driver` class, objects of both payment types are created. The program then calls the `pay()` method on each object. Even though the objects are different, they can both be treated as Payment types because they follow the same interface rules.
+
 `Account.java`
 ```java	
 package com.cmu;
