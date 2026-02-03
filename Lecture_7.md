@@ -432,3 +432,7 @@ public class Driver
 ```
 The above program makes sure that reader is closed no matter an exception occurs or not. This is a real life example of using `finally` as it is highly recommended to close readers after usage.
 
+## References
+- Introduction to Java Programming and Data Structures, 13th edition, by Y Daniel Liang,
+	- Chapter 12 (Inheritance and Polymorphism)
+- https://www.w3schools.com/java/java_try_catch.asp
