@@ -342,7 +342,7 @@ public class Driver
 }
 ```
 
-Note how `Comparator` with lambda expression saved us from writing a new class that implements `Comparator` interface. If we were to NOT use Comparator interface with lambda function, below will be the implementation which would be extra word for creating a `MyComparator` class first and then using it.
+Note how `Comparator` with lambda expression saved us from writing a new class that implements `Comparator` interface. If we were to NOT use Comparator interface with lambda function, below will be the implementation which would be extra work for creating a `MyComparator` class first and then using it.
 `Driver.java`
 ```java
 package com.cmu.test;
