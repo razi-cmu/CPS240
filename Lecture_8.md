@@ -436,6 +436,7 @@ public class Driver
 }
 
 ```
+In the above code, I used mix of `getAge()` and `.age` to show they can both be used as required. However, using `getAge()` is considered best programming practice.
 
 ## References
 - Introduction to Java Programming and Data Structures, 13th edition, by Y Daniel Liang,
