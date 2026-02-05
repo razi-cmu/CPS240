@@ -342,6 +342,100 @@ public class Driver
 }
 ```
 
+Note how `Comparator` with lambda expression saved us from writing a new class that implements `Comparator` interface. If we were to NOT use Comparator interface with lambda function, below will be the implementation which would be extra word for creating a `MyComparator` class first and then using it.
+`Driver.java`
+```java
+package com.cmu.test;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.LinkedList;
+import java.util.List;
+
+class Student
+{
+	String name;
+	int age;
+	
+	
+	
+	Student(String name, int age)
+	{
+		this.name = name;
+		this.age = age;
+	}
+	public String toString()
+	{
+		return "(" + this.name + ", " + this.age + ")";
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+}
+
+class MyComparator implements Comparator<Student>
+{
+
+	@Override
+	public int compare(Student o1, Student o2) 
+	{
+		return Integer.compare(o2.getAge(), o1.getAge());
+	}
+	
+}
+public class Driver 
+{
+	public static Student youngest_student(List<Student> students)
+	{
+		Student youngest = students.get(0);
+		
+		for (Student student: students)
+		{
+			if (student.age < youngest.age)
+			{
+				youngest = student;
+			}
+		}
+		return youngest;
+	}
+	
+	public static void sort_students(List<Student> students)
+	{
+		MyComparator comp = new MyComparator();
+		Collections.sort(students,comp);
+	}
+	public static void main(String[] args) 
+	{
+		List<Student> students = new LinkedList<>();
+		students.add(new Student("Cunningham", 25));
+		students.add(new Student("Robinson", 22));
+		students.add(new Student("Thompson", 23));
+		students.add(new Student("Sasser", 19));
+		students.add(new Student("Stewart", 24));
+		
+		System.out.println(students);
+		
+		System.out.println("Youngest: " + youngest_student(students));
+		
+		sort_students(students);
+		System.out.println(students);
+ 
+
+	}
+}
+
+```
+
 ## References
 - Introduction to Java Programming and Data Structures, 13th edition, by Y Daniel Liang,
 	- Chapter 20.2 (Collections)
