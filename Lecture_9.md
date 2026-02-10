@@ -157,6 +157,7 @@ public class Driver
 }
 
 ```
+Please note that this Java code is just a sample code which does not execute anything. This code is to show you how a simple class diagram can be converted into corresponding Java code.
 
 ## Exercise 2
 CMU Course Registration system enables students to register for courses. Students use this system to enroll in the courses offered by CMU.
