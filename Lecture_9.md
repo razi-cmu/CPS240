@@ -31,6 +31,9 @@ In a class diagram, relationships (parent and child) can be shown as well. Below
 
 In the above diagram `+` depicts a `public` access modifier. `-` is normally used for `private` and `#` is used for `protected`.
 
+### Multiplicity
+Multiplicity in UML class diagrams specifies the cardinality of relationships between classes. This tells you how many instances of a class can be linked to a single instance of another class. For example, it can describe whether a customer can place multiple orders or just one, or whether a library can have many books or only a few. Understanding these relationships helps prevent errors and ensures that the system behaves as expected. It also helps in planning how data will be stored and managed within databases, as well as how objects will interact in object-oriented programming. Properly defined multiplicity ensures accurate data modeling and helps prevent logical errors that could arise from incorrect assumptions about object relationships. By clearly illustrating these relationships, multiplicity aids in creating robust, maintainable, and scalable software solutions.
+
 ## Exercise 1
 CMU Medical Clinic is a general purpose clinic. Patients have to book an appointment to see the doctors. Patients contact Office Staff to book or change an appointment.
 - Tasks
