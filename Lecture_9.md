@@ -36,6 +36,9 @@ Multiplicity in UML class diagrams specifies the cardinality of relationships be
 
 ![alt_text](CPS240_UML_Multiplicity.png)
 
+Normally, class diagrams are read from top to bottom, left to right. Below is an example of a class diagram with multiplicities:
+![alt_text](CPS240_UML_Multiplicity_2.png)
+
 ## Exercise 1
 CMU Medical Clinic is a general purpose clinic. Patients have to book an appointment to see the doctors. Patients contact Office Staff to book or change an appointment.
 - Tasks
