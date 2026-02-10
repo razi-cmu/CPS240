@@ -29,6 +29,8 @@ The most widely use UML diagram is the class diagram. It is the building block o
 In a class diagram, relationships (parent and child) can be shown as well. Below is an example of a parent child relationship where `Vehicle` is a parent class and `Car` and `Truck` are child classes:
 ![alt text](CPS240_UML_Relationships.png)
 
+In the above diagram `+` depicts a `public` access modifier. `-` is normally used for `private` and `#` is used for `protected`.
+
 ## Exercise 1
 CMU Medical Clinic is a general purpose clinic. Patients have to book an appointment to see the doctors. Patients contact Office Staff to book or change an appointment.
 - Tasks
