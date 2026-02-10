@@ -45,10 +45,118 @@ CMU Medical Clinic is a general purpose clinic. Patients have to book an appoint
   - Identify the classes
   - Create a Class Diagram for Book or Change Appointment
   - Notify doctor about the appointment
+
+Once completed the UML diagram, use that diagram to write corresponding Java code.
  
 ### Solution
 ![alt text](UML_Ex_1.png)
 
+
+Below is the Java code from this class diagram:
+```java
+package com.cmu.test;
+
+class Person
+{
+	private String name;
+	private int ID;
+	private int age;
+	
+	Person(String name, int ID, int age)
+	{
+		this.name = name;
+		this.ID = ID;
+		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getID() {
+		return ID;
+	}
+
+	public void setID(int iD) {
+		ID = iD;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+}
+
+class Staff extends Person
+{
+	Staff(String name, int ID, int age)
+	{
+		super(name, ID, age);
+	}
+}
+
+class Patient extends Person
+{
+	Patient(String name, int ID, int age)
+	{
+		super(name, ID, age);
+	}
+}
+
+class Doctor extends Person
+{
+	Doctor(String name, int ID, int age)
+	{
+		super(name, ID, age);
+	}
+}
+
+class Appointment 
+{
+	private int id;
+	
+	Appointment(int id)
+	{
+		this.id = id;
+	}
+	public int getID()
+	{
+		return this.id;
+	}
+	public void notifyDoctor(Doctor doctor)
+	{
+		System.out.println("Notified " + "Dr. " + doctor.getName());
+	}
+}
+
+class BookingSystem
+{
+	public void bookAppointment(Appointment app)
+	{
+		System.out.println("Appointment with ID: " + app.getID() + " is booked");
+	}
+}
+
+public class Driver 
+{
+	
+	public static void main(String[] args) 
+	{
+		// Any appropriate code execution for this system to work.
+ 
+
+	}
+}
+
+```
 
 ## Exercise 2
 CMU Course Registration system enables students to register for courses. Students use this system to enroll in the courses offered by CMU.
