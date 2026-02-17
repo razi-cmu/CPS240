@@ -386,6 +386,7 @@ Using SingleTon Pattern:
 - Only one instance of Printer is created, ensuring that resources are managed efficiently
 - All parts of the application access the same Printer instance, ensuring consistent settings and behavior across the application
 - The singleton instance can be accessed from anywhere in the application, simplifying how the printer is used
+- Note how constructor of Printer class is private not public.
 
 #### Logger Singleton
 Let's see another example of SingleTon Pattern:
