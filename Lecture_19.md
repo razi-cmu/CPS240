@@ -3,7 +3,7 @@ JavaFX provides many types of panes for automatically laying out nodes in a desi
 
 
 ## StackPane
-The `StackPane` places the nodes in the center of the pane on top of each other. The node added first is placed at the bottom of the stack and the next node is placed on top of it. The class named `StackPane` of the package `javafx.scene.layout` represents the stack pane layout. Let's see the working of `StackPane`
+The `StackPane` places the nodes in the center of the pane on top of each other. The node added first is placed at the bottom of the stack and the next node is placed on top of it. The class named `StackPane` of the package `javafx.scene.layout` represents the stack pane layout. Let's see the working of `StackPane`.
 
 `MyGUI.java`
 ```java
