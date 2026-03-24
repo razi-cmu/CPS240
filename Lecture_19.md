@@ -234,3 +234,7 @@ public class Driver extends Application
 	}
 }
 ```
+
+## References
+- Introduction to Java Programming and Data Structures, 13th edition, by Y Daniel Liang,
+	- Chapter 14 (JavaFX Basics)
